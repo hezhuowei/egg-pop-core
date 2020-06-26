@@ -20,11 +20,11 @@
 [download-image]: https://img.shields.io/npm/dm/egg-pop-core.svg?style=flat-square
 [download-url]: https://npmjs.org/package/egg-pop-core
 
-<!--
-Description here.
--->
+支持 typescript
 
 ## 详细配置
+
+### 单实例
 
 ```js
 // {app_root}/config/config.default.js
@@ -36,24 +36,29 @@ exports.popCore = {
     endpoint: "https://dysmsapi.aliyuncs.com",
   },
 };
-// 多实例
-// exports.popCore = {
-//   clients: {
-//     client1: {
-//       accessKeyId: "accessKeyId",
-//       accessKeySecret: "accessKeySecret",
-//       apiVersion: "2017-05-25",
-//       endpoint: "https://dysmsapi.aliyuncs.com",
-//     },
-//     client2: {
-//       accessKeyId: "accessKeyId",
-//       accessKeySecret: "accessKeySecret",
-//       apiVersion: "2017-05-25",
-//       endpoint: "https://dysmsapi.aliyuncs.com",
-//     },
-//     // ...
-//   },
-// };
+```
+
+### 多实例
+
+```js
+// {app_root}/config/config.default.js
+exports.popCore = {
+  clients: {
+    client1: {
+      accessKeyId: "accessKeyId",
+      accessKeySecret: "accessKeySecret",
+      apiVersion: "2017-05-25",
+      endpoint: "https://dysmsapi.aliyuncs.com",
+    },
+    client2: {
+      accessKeyId: "accessKeyId",
+      accessKeySecret: "accessKeySecret",
+      apiVersion: "2017-05-25",
+      endpoint: "https://dysmsapi.aliyuncs.com",
+    },
+    //...
+  },
+};
 ```
 
 ## 开启插件

@@ -20,9 +20,7 @@
 [download-image]: https://img.shields.io/npm/dm/egg-pop-core.svg?style=flat-square
 [download-url]: https://npmjs.org/package/egg-pop-core
 
-<!--
-Description here.
--->
+support typescript
 
 ## Install
 
@@ -42,24 +40,29 @@ exports.popCore = {
     endpoint: "https://dysmsapi.aliyuncs.com",
   },
 };
-// Multiple Client
-// exports.popCore = {
-//   clients: {
-//     client1: {
-//       accessKeyId: "accessKeyId",
-//       accessKeySecret: "accessKeySecret",
-//       apiVersion: "2017-05-25",
-//       endpoint: "https://dysmsapi.aliyuncs.com",
-//     },
-//     client2: {
-//       accessKeyId: "accessKeyId",
-//       accessKeySecret: "accessKeySecret",
-//       apiVersion: "2017-05-25",
-//       endpoint: "https://dysmsapi.aliyuncs.com",
-//     },
-//     //...
-//   },
-// };
+```
+
+### Multiple client
+
+```js
+// {app_root}/config/config.default.js
+exports.popCore = {
+  clients: {
+    client1: {
+      accessKeyId: "accessKeyId",
+      accessKeySecret: "accessKeySecret",
+      apiVersion: "2017-05-25",
+      endpoint: "https://dysmsapi.aliyuncs.com",
+    },
+    client2: {
+      accessKeyId: "accessKeyId",
+      accessKeySecret: "accessKeySecret",
+      apiVersion: "2017-05-25",
+      endpoint: "https://dysmsapi.aliyuncs.com",
+    },
+    //...
+  },
+};
 ```
 
 ```js
