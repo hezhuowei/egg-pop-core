@@ -2,16 +2,16 @@
 # yarn lockfile v1
 
 
-"@alicloud/pop-core@^1.7.10":
-  version "1.7.10"
-  resolved "https://registry.yarnpkg.com/@alicloud/pop-core/-/pop-core-1.7.10.tgz#d0e221036dbb0ccde453dd09b1cfabd8341b7a69"
-  integrity sha512-9/aLWgmgaAdB1ERNTpdOvF7wueLY5CDTRxKZr93x542iuYRA1NDpcKslFqLOy5CUOa0CbopET3JGaHSAz5qv9g==
+"@alicloud/pop-core@^1.7.13":
+  version "1.7.13"
+  resolved "https://registry.yarnpkg.com/@alicloud/pop-core/-/pop-core-1.7.13.tgz#913f15d4a59c099e7f4e0d0481288ef0c0ed2425"
+  integrity sha512-agzr4DU+aAGW7/2mp2hP1JcNJkn/zBS0jUGQt5etIASN0MVq1tMdudVqvWbExUG0mUouo/n2VgdnjOHjswvrlA==
   dependencies:
     debug "^3.1.0"
     httpx "^2.1.2"
     json-bigint "^1.0.0"
     kitx "^1.2.1"
-    xml2js "^0.4.17"
+    xml2js "^0.5.0"
 
 "@babel/code-frame@7.0.0-beta.44":
   version "7.0.0-beta.44"
@@ -7261,10 +7261,10 @@ wt@^1.2.0:
     ndir "^0.1.5"
     sdk-base "^2.0.1"
 
-xml2js@^0.4.17:
-  version "0.4.23"
-  resolved "https://registry.npm.taobao.org/xml2js/download/xml2js-0.4.23.tgz?cache=0&sync_timestamp=1584990425260&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fxml2js%2Fdownload%2Fxml2js-0.4.23.tgz#a0c69516752421eb2ac758ee4d4ccf58843eac66"
-  integrity sha1-oMaVFnUkIesqx1juTUzPWIQ+rGY=
+xml2js@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/xml2js/-/xml2js-0.5.0.tgz#d9440631fbb2ed800203fad106f2724f62c493b7"
+  integrity sha512-drPFnkQJik/O+uPKpqSgr22mpuFHqKdbS835iAQrUC73L2F5WkboIRd63ai/2Yg6I1jzifPFKH2NTK+cfglkIA==
   dependencies:
     sax ">=0.6.0"
     xmlbuilder "~11.0.0"
